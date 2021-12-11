@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#E0EBE3"
+    >
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#075E55"
+
+        >
+        <ImageView
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="60dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatsSaver"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+
+            android:layout_marginLeft="360dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/dots" />
+
+        <TextView
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="140dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direct Chat"
+            android:textColor="@color/white"
+            android:textSize="20dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+
+        <RelativeLayout
+            android:elevation="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="350dp"
+            android:layout_height="290dp"
+            android:background="@drawable/stbck">
+            <EditText
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="300dp"
+                android:layout_height="45dp"
+                android:background="@drawable/msgbox"
+                android:hint="Phone No"
+                android:textStyle="bold"
+                android:textColorHint="#1D705C"
+                android:padding="12dp"/>
+
+            <EditText
+
+                android:layout_marginTop="90dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="300dp"
+                android:layout_height="120dp"
+                android:background="@drawable/msgbox"
+                android:hint="Message"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textColorHint="#1D705C"
+                android:padding="1dp"/>
+
+            <TextView
+
+                android:background="@drawable/btnbck"
+
+                android:layout_marginTop="220dp"
+                android:layout_marginLeft="35dp"
+                android:layout_width="280dp"
+                android:layout_height="50dp"
+                android:text="Send"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

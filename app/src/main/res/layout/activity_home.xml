@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="#E0EBE3"
+    >
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:background="#075E55"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="20dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_weight="6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatsSaver"
+            android:textColor="@color/white"
+            android:textSize="30dp"/>
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_weight="2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="10dp"
+            android:layout_height="20dp"
+            android:src="@drawable/dots"/>
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:elevation="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stbck"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/statusdown"/>
+                <TextView
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Status Saver"
+                    android:textColor="#1D705C"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:elevation="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stbck"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/down" />
+                <TextView
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Saved Status"
+                    android:textColor="#1D705C"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            >
+
+            <RelativeLayout
+                android:elevation="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stbck"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/stick" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:layout_marginTop="130dp"
+                    android:text="Stickers"
+                    android:textColor="#1D705C"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:elevation="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/stbck"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/send" />
+                <TextView
+                    android:layout_marginTop="130dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Direct Chat"
+                    android:textColor="#1D705C"
+                    android:textSize="20dp"
+                    android:textStyle="bold"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>
