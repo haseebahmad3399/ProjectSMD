@@ -67,6 +67,7 @@
                 android:background="@drawable/stbck"
                 android:layout_weight="1"
                 android:layout_width="0dp"
+                android:id="@+id/statusSaver"
                 android:layout_height="match_parent">
                 <ImageView
                     android:layout_marginTop="20dp"
@@ -94,6 +95,7 @@
                 android:background="@drawable/stbck"
                 android:layout_weight="1"
                 android:layout_width="0dp"
+                android:id="@+id/savedStatus"
                 android:layout_height="match_parent">
 
                 <ImageView
@@ -101,15 +103,16 @@
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
                     android:src="@drawable/down" />
+
                 <TextView
-                    android:layout_marginTop="130dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="130dp"
                     android:text="Saved Status"
                     android:textColor="#1D705C"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
 
 
@@ -152,6 +155,7 @@
                 android:background="@drawable/stbck"
                 android:layout_weight="1"
                 android:layout_width="0dp"
+                android:id="@+id/stickers"
                 android:layout_height="match_parent">
 
                 <ImageView
@@ -181,6 +185,7 @@
                 android:background="@drawable/stbck"
                 android:layout_weight="1"
                 android:layout_width="0dp"
+                android:id="@+id/directChat"
                 android:layout_height="match_parent">
 
                 <ImageView

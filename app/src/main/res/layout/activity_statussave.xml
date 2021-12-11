@@ -19,12 +19,13 @@
         android:background="#075E55"
 
         >
-        <ImageView
-            android:layout_marginLeft="10dp"
 
+        <ImageView
             android:layout_width="60dp"
+            android:id="@+id/logostatusSave"
             android:layout_height="80dp"
-            android:src="@drawable/logo"/>
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_marginTop="20dp"
@@ -42,35 +43,21 @@
             android:layout_height="30dp"
             android:src="@drawable/dots"/>
 
-        <TextView
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="40dp"
-            android:layout_width="wrap_content"
+        <com.google.android.material.tabs.TabLayout
+            android:layout_below="@+id/logostatusSave"
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Images"
-            android:textColor="@color/white"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="160dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Videos"
-            android:textColor="@color/white"
-            android:textSize="20dp"/>
-
-        <TextView
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="290dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Text"
-            android:textColor="@color/white"
-            android:textSize="20dp"/>
+            app:tabIndicatorColor="@color/white"
+            android:background="#075E55"
+            app:tabIndicatorHeight="4dp"
+            app:tabSelectedTextColor="#62D68E"
+            app:tabTextColor="@color/white" />
 
 
     </RelativeLayout>
+
+
 
 
 
