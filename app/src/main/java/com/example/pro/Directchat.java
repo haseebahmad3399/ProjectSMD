@@ -3,18 +3,68 @@ package com.example.pro;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.hbb20.CountryCodePicker;
 
 public class Directchat extends AppCompatActivity {
+
+
+    CountryCodePicker ccp;
+    EditText phno,msg;
+    TextView sendbtn;
+    String msgstr,phnostr="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_directchat);
+        ccp=findViewById(R.id.countrycode);
+        phno=findViewById(R.id.phno);
+        msg=findViewById(R.id.msg);
+        sendbtn=findViewById(R.id.sendbtn);
+
+        sendbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                msgstr=msg.getText().toString();
+                phnostr=phno.getText().toString();
+                if(!msgstr.isEmpty() && !phnostr.isEmpty()){
+                    ccp.registerCarrierNumberEditText(phno);
+                    phnostr=ccp.getFullNumber();
+
+
+                        Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone="+phnostr+"&text="+msgstr));
+                        startActivity(i);
+                        msg.setText("");
+                        phno.setText("");
+
+                }
+                else {
+                    Toast.makeText(Directchat.this, "Please fill up the text fields", Toast.LENGTH_SHORT).show();
+                }
+
+
+
+            }
+        });
+
+
+
+
+
         if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT < 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, true);
         }
@@ -27,6 +77,23 @@ public class Directchat extends AppCompatActivity {
             getWindow().setStatusBarColor(Color.rgb(7, 94, 84));
         }
     }
+
+    private boolean isWhatsappinstalled(){
+        PackageManager packageManager=getPackageManager();
+        boolean whtsappinstalled;
+        try {
+            packageManager.getPackageInfo("com.whatsapp",packageManager.GET_ACTIVITIES);
+            whtsappinstalled=true;
+
+        } catch (PackageManager.NameNotFoundException e) {
+            whtsappinstalled=false;
+//            e.printStackTrace();
+        }
+
+        return whtsappinstalled;
+    }
+
+
 
     public static void setWindowFlag(Activity activity, final int bits, boolean on) {
         Window win = activity.getWindow();
