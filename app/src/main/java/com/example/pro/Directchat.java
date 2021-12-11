@@ -46,6 +46,7 @@ public class Directchat extends AppCompatActivity {
                     phnostr=ccp.getFullNumber();
 
 
+
                         Intent i=new Intent(Intent.ACTION_VIEW, Uri.parse("https://api.whatsapp.com/send?phone="+phnostr+"&text="+msgstr));
                         startActivity(i);
                         msg.setText("");
