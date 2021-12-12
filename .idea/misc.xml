@@ -4,7 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/ProjectSMD/app/src/main/res/layout/activity_customstickers.xml" value="0.17314814814814813" />
-        <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/ProjectSMD/app/src/main/res/layout/activity_directchat.xml" value="0.33" />
+        <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/ProjectSMD/app/src/main/res/layout/activity_directchat.xml" value="0.22" />
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/ProjectSMD/app/src/main/res/layout/dchat.xml" value="0.10625" />
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/pro/app/src/main/res/drawable/btnbck.xml" value="0.1949367088607595" />
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/pro/app/src/main/res/drawable/msgbox.xml" value="0.1949367088607595" />
@@ -16,14 +16,10 @@
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/pro/app/src/main/res/layout/activity_recycler.xml" value="0.1841880341880342" />
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/pro/app/src/main/res/layout/activity_statussave.xml" value="0.1841880341880342" />
         <entry key="..\:/Users/Masood Ahmed/AndroidStudioProjects/pro/app/src/main/res/layout/activity_stickers.xml" value="0.1841880341880342" />
-        <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/drawable/ic_file_download_black.xml" value="0.1751054852320675" />
-        <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/drawable/ic_share.xml" value="0.1751054852320675" />
         <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/activity_home.xml" value="0.1641025641025641" />
         <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/activity_main.xml" value="0.1641025641025641" />
         <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/activity_statussave.xml" value="0.1641025641025641" />
         <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/activity_stickers.xml" value="0.1641025641025641" />
-        <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/img_fragment.xml" value="0.1641025641025641" />
-        <entry key="..\:/Users/ahmad/Downloads/Compressed/18i-1579_18i-0755_18i-0550/Designs_Code/pro/app/src/main/res/layout/imgadapter_layout.xml" value="0.1641025641025641" />
       </map>
     </option>
   </component>

@@ -17,12 +17,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.hbb20.CountryCodePicker;
+
 
 public class Directchat extends AppCompatActivity {
 
 
-    CountryCodePicker ccp;
+
     EditText phno,msg;
     TextView sendbtn;
     String msgstr,phnostr="";
@@ -31,7 +31,6 @@ public class Directchat extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_directchat);
-        ccp=findViewById(R.id.countrycode);
         phno=findViewById(R.id.phno);
         msg=findViewById(R.id.msg);
         sendbtn=findViewById(R.id.sendbtn);
@@ -42,8 +41,7 @@ public class Directchat extends AppCompatActivity {
                 msgstr=msg.getText().toString();
                 phnostr=phno.getText().toString();
                 if(!msgstr.isEmpty() && !phnostr.isEmpty()){
-                    ccp.registerCarrierNumberEditText(phno);
-                    phnostr=ccp.getFullNumber();
+
 
 
 
