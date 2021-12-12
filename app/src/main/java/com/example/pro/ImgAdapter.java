@@ -2,6 +2,8 @@ package com.example.pro;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
@@ -15,6 +17,7 @@ import android.widget.RelativeLayout;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
+import androidx.core.content.FileProvider;
 import androidx.recyclerview.widget.RecyclerView;
 
 
@@ -46,14 +49,31 @@ public class ImgAdapter extends RecyclerView.Adapter<ImgAdapter.ItemViewHolder> 
         final Status status = imagesList.get(position);
         Picasso.get().load(status.getFile()).into(holder.imageView);
 
-        holder.save.setOnClickListener(v -> Common.copyFile(status, context, container));
+        holder.save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                PackageManager m = context.getPackageManager();
+                String s = context.getPackageName();
+                PackageInfo p = null;
+                try {
+                    p = m.getPackageInfo(s, 0);
+                    s=p.applicationInfo.dataDir;
+                    Common.copyFile(status, context, container, s);
+                } catch (PackageManager.NameNotFoundException e) {
+                    e.printStackTrace();
+                }
+                s = p.applicationInfo.dataDir;
+
+            }
+        });
 
         holder.share.setOnClickListener(v -> {
 
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
 
             shareIntent.setType("image/jpg");
-            shareIntent.putExtra(Intent.EXTRA_STREAM, Uri.parse("file://" + status.getFile().getAbsolutePath()));
+            Uri photoURI = FileProvider.getUriForFile(context, context.getApplicationContext().getPackageName() + ".provider", status.getFile());
+            shareIntent.putExtra(Intent.EXTRA_STREAM, photoURI);
             context.startActivity(Intent.createChooser(shareIntent, "Share image"));
 
         });

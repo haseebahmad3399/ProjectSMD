@@ -89,14 +89,14 @@ public class ImageFragment extends Fragment {
     }
 
     private void retreiveFromDirectory(File wAFolder) {
-        //new Thread(() -> {
+        new Thread(() -> {
             File[] statusFiles;
             statusFiles = wAFolder.listFiles();
             ls.clear();
             //System.out.println(statusFiles.length);
 
             if (statusFiles != null && statusFiles.length > 0) {
-                System.out.println("Files existed at "+ wAFolder.toString());
+                System.out.println("Files existed at " + wAFolder.toString());
                 Arrays.sort(statusFiles);
                 for (File file : statusFiles) {
                     Status status = new Status(file, file.getName(), file.getAbsolutePath());
@@ -132,8 +132,9 @@ public class ImageFragment extends Fragment {
                     Toast.makeText(getActivity(), "No files found", Toast.LENGTH_SHORT).show();
                 });
 
-           }
+            }
             srl.setRefreshing(false);
+        }).start();
     }
 
 }
