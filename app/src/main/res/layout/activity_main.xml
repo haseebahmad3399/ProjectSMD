@@ -10,22 +10,33 @@
     android:background="@drawable/mainbck"
     >
 
-    <ImageView
-        android:id="@+id/log"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="250dp"
-        android:layout_marginLeft="110dp"
-        android:src="@drawable/logo" />
-    <TextView
-        android:layout_marginTop="420dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WhatsSaver"
-        android:layout_marginLeft="60dp"
-        android:textColor="@color/white"
-        android:textSize="50dp"
-        />
+        android:layout_centerInParent="true"
+
+
+        >
+
+        <ImageView
+            android:layout_centerInParent="true"
+
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:src="@drawable/logo" />
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WhatsSaver"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            />
+    </RelativeLayout>
+
 
 
 
