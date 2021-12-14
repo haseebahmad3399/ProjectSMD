@@ -53,22 +53,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         >
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="2"
             android:orientation="horizontal"
-            >
+            android:weightSum="2">
 
             <RelativeLayout
-                android:elevation="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/stbck"
-                android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/statusSaver"
-                android:layout_height="match_parent">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/stbck"
+                android:elevation="10dp">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -77,28 +78,29 @@
                     android:src="@drawable/statusdown" />
 
                 <TextView
-                    android:layout_marginTop="130dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="130dp"
                     android:text="Status Saver"
                     android:textColor="#1D705C"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
-
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
+
             <RelativeLayout
-                android:elevation="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/stbck"
-                android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/savedStatus"
-                android:layout_height="match_parent">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/stbck"
+                android:elevation="10dp">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -117,13 +119,7 @@
                     android:textStyle="bold" />
 
 
-
             </RelativeLayout>
-
-
-
-
-
 
 
         </LinearLayout>
@@ -142,23 +138,26 @@
         android:layout_weight="2.5"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+
         >
+
         <LinearLayout
+
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="2"
             android:orientation="horizontal"
-            >
+            android:weightSum="2">
 
             <RelativeLayout
-                android:elevation="10dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/stbck"
-                android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/stickers"
-                android:layout_height="match_parent">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/stbck"
+                android:elevation="10dp">
 
                 <ImageView
                     android:layout_width="200dp"
@@ -177,42 +176,38 @@
                     android:textStyle="bold" />
 
 
-
             </RelativeLayout>
+
             <RelativeLayout
-                android:elevation="10dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/stbck"
-                android:layout_weight="1"
-                android:layout_width="0dp"
+                android:layout_marginBottom="10dp"
                 android:id="@+id/directChat"
-                android:layout_height="match_parent">
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/stbck"
+                android:elevation="10dp">
 
                 <ImageView
                     android:layout_width="200dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="20dp"
                     android:src="@drawable/send" />
+
                 <TextView
-                    android:layout_marginTop="130dp"
-                    android:layout_marginLeft="25dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="130dp"
                     android:text="Direct Chat"
                     android:textColor="#1D705C"
                     android:textSize="20dp"
-                    android:textStyle="bold"/>
-
+                    android:textStyle="bold" />
 
 
             </RelativeLayout>
-
-
-
-
-
 
 
         </LinearLayout>
