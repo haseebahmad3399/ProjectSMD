@@ -17,6 +17,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.hbb20.CountryCodePicker;
 
 
 public class Directchat extends AppCompatActivity {
@@ -26,7 +27,7 @@ public class Directchat extends AppCompatActivity {
     EditText phno,msg;
     TextView sendbtn;
     String msgstr,phnostr="";
-
+    CountryCodePicker ccp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,12 +35,15 @@ public class Directchat extends AppCompatActivity {
         phno=findViewById(R.id.phno);
         msg=findViewById(R.id.msg);
         sendbtn=findViewById(R.id.sendbtn);
-
+        ccp=findViewById(R.id.ccp);
         sendbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 msgstr=msg.getText().toString();
-                phnostr=phno.getText().toString();
+                String countrycode=ccp.getSelectedCountryCode();
+                phnostr=countrycode+phno.getText().toString();
+
+
                 if(!msgstr.isEmpty() && !phnostr.isEmpty()){
 
 

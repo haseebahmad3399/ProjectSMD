@@ -67,20 +67,25 @@
 
         <RelativeLayout
             android:layout_width="350dp"
-            android:layout_height="290dp"
+            android:layout_height="320dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/stbck"
             android:elevation="10dp">
-
-
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                app:defaultNameCode="PK" />
 
             <EditText
+
                 android:id="@+id/phno"
                 android:layout_width="300dp"
                 android:layout_height="45dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="40dp"
                 android:background="@drawable/msgbox"
                 android:hint="Phone No"
                 android:padding="12dp"
@@ -88,15 +93,16 @@
                 android:textColorHint="#1D705C"
                 android:textStyle="bold" />
 
+
             <EditText
                 android:id="@+id/msg"
                 android:layout_width="300dp"
                 android:layout_height="120dp"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="90dp"
+                android:layout_marginTop="100dp"
                 android:background="@drawable/msgbox"
                 android:hint="Message"
-                android:padding="1dp"
+                android:padding="12dp"
                 android:textColor="@color/black"
                 android:textColorHint="#1D705C"
                 android:textStyle="bold" />
@@ -107,11 +113,11 @@
                 android:layout_width="280dp"
                 android:layout_height="50dp"
                 android:layout_marginLeft="35dp"
-                android:layout_marginTop="220dp"
+                android:layout_marginTop="230dp"
                 android:background="@drawable/btnbck"
+                android:gravity="center"
                 android:padding="10dp"
                 android:text="Send"
-                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="20dp"
                 android:textStyle="bold" />

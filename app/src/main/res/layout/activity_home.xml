@@ -69,11 +69,13 @@
                 android:layout_width="0dp"
                 android:id="@+id/statusSaver"
                 android:layout_height="match_parent">
+
                 <ImageView
-                    android:layout_marginTop="20dp"
                     android:layout_width="200dp"
                     android:layout_height="120dp"
-                    android:src="@drawable/statusdown"/>
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/statusdown" />
+
                 <TextView
                     android:layout_marginTop="130dp"
                     android:layout_marginLeft="25dp"
