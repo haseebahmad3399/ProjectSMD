@@ -17,6 +17,10 @@ public class PageAdapter extends FragmentPagerAdapter {
     @NonNull
     @Override
     public Fragment getItem(int position) {
+        if (position == 1){
+            System.out.println("On video Fragment");
+            return new VideoFragment();
+        }
         return new ImageFragment();
     }
 
